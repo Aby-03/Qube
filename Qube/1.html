@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    <title>LOGIN PAGE</title>
+    <CENTER><h1>THE ABILITY TO TEACH IS AN AMAZING GIFT</h1>  <br><a id="ww">WELCOME CREATER</a></CENTER>
+  
+<style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+    body{
+        background: linear-gradient(135deg, rgba(30,29,31,1) 0%, #424874 100%);
+        font-family: 'Poppins', sans-serif;
+    }
+    #ww{
+        color: red;
+    }
+    #box{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 500px;
+        max-width: 400px;
+        border: 1px solid #F4EEFF;
+        padding: 2rem;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        background-color: #F4EEFF;
+    }
+    .card{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        transform-style: preserve-3d;
+        transform-origin: center right;
+        transition: transform 1s;
+    }
+    .card .input-container{
+        margin: 2.7rem  0;
+        display: flex;
+        position: relative;
+    }
+    .card.is-flipped {
+        transform: translateX(-100%) rotateY(-180deg);
+      }
+      .card__face {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+      }
+      .card__face--back {
+        transform: rotateY(180deg);
+      }
+      
+    .icon-wrapper{
+        background: #424874;
+        width: 30px;
+        height: 34px;
+        border-radius: 5px 0px 0px 5px;
+    }
+    .icon-wrapper i{
+        font-size: 20px;
+        padding: 7px;
+        color: #F4EEFF;
+    }
+    #UserUsername , #UserPassword{
+        background: transparent;
+        border: 1px solid #424874;
+        width: 100%;
+        padding: 0 10px;
+        font-size: 13px;
+        border-radius: 0px 5px 5px 0px;
+    }
+    input[type="checkbox"] {
+        appearance: none;
+        width: 15px;
+        height: 15px;
+        border: 1px solid #808080;
+    }
+     input[type="checkbox"]:checked {
+        position: relative;
+        background: none;
+    }
+    input[id="checkbox"]:checked::after {
+        position: absolute;
+        top: 0.28rem;
+        left: 0.11rem;
+        content: "";
+        width: 10px;
+        height: 3px;
+        border: 3px solid #424874;
+        border-right: none;
+        border-top: none;
+        transform: rotate(309deg);
+    }
+    
+    .input-container label{
+        font-size: 11px;
+        padding: 4px;
+    }
+    
+    .b-sign{
+        color : #DCD6F7;
+        background: #554274;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 6px;
+        box-shadow: rgb(50 50 93 / 25%) 0px 50px 100px -20px, rgb(0 0 0 / 30%) 0px 30px 60px -30px, rgb(10 37 64 / 35%) 0px -2px 6px 0px inset;
+        position: absolute;
+        right: 0;
+        bottom: -20px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 14px;
+    }
+    .i-more{
+        position: absolute;
+        right: 1%;
+        top: 0%;
+    }
+    .i-more i{
+        font-size:24px;
+        color: #3c8191;
+        cursor: pointer;
+    }
+    .b-support{
+        background: #DCD6F7;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 6px;
+        cursor: pointer;
+        display: block;
+        text-align: center;
+        margin: 2rem 0;
+        font-size: 14px;
+        box-shadow: rgb(50 50 93 / 25%) 0px 50px 100px -20px, rgb(0 0 0 / 30%) 0px 30px 60px -30px, rgb(10 37 64 / 35%) 0px -2px 6px 0px inset;
+    }
+    .b-cta{
+        color : #DCD6F7;
+        background: #424874;
+        display: block;
+       text-align: center;
+        margin: 2rem 0;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+    .hidden{
+        color: red;
+        display: none;
+    }
+    #hide1{
+        display: none;
+        color: red;
+    }
+    #hide2{
+        display: none;
+        color: red;
+    }
+    @media (max-width: 300px) {
+        #box{
+            padding: 1rem  0.2rem;
+        }
+    }</style>
+<body>
+    <div id="box">
+        <div class="card">
+            <div class="card__face card__face--front">
+                <div class="i-more">
+                    <i class="fa fa-ellipsis-h"></i>
+                </div>   <h2>Enter username</h2>
+                
+                <a class="hidden" id="hide1"><br> invalid username</a>
+                <div class="input-container">
+                 
+                    <div class="icon-wrapper"><i class="fa fa-user"></i></div>
+                    <input name="data[User][username]" required="required" placeholder="Username" maxlength="255" type="text" id="Username">
+                </div><h2>Password</h2>
+                <a  class="hidden" id="hide2"><br> invalid password</a>
+                <div class="input-container">
+                    
+                    <div class="icon-wrapper"><i class="fa fa-lock"></i></div>
+                    <input name="data[User][password]" required="required" placeholder="Password" type="password" id="Password">
+                </div>
+                <div class="input-container">
+                    <input type="checkbox" id="checkbox" name="checkbox" value="Remember Me?" >
+                    <label for="checkbox">Remember Me?</label>
+                </div>
+                <div class="input-container">
+                    <button class="b-sign" id="myButton" onclick="login()">Click Me</button>
+                   
+                </div>   
+            </div>
+            <div class="card__face card__face--back">
+                <div class="i-more">
+                    <i class="fa fa-ellipsis-h"></i>
+                </div>
+                <div>Need help?</div>
+                <a onclick="" class='b-support' title='Forgot Password?'> Forgot Password?</a>
+                <a onclick="" class='b-support' title='Contact Support'> Contact Support</a>
+                <a onclick="" class='b-cta' title='Sign up now!'> CREATE ACCOUNT</a>
+            </div>
+        </div>
+    </div>
+
+<script>var boxs = document.querySelectorAll('.i-more');
+    console.log(boxs);
+    [...boxs].forEach((box)=>{
+        box.addEventListener( 'click', function() {
+        box.parentNode.parentNode.classList.toggle('is-flipped');
+      });
+    });
+
+ function login() {
+    var usernameInput = document.getElementById("Username").value;
+      var passwordInput = document.getElementById("Password").value;
+
+      // Expected username and password
+      var expectedUsername = "NAME";
+      var expectedPassword = "1234";
+      
+      
+      
+      // Check if the entered values match the expected values
+      if (usernameInput === expectedUsername && passwordInput === expectedPassword) {
+   
+        location.replace("web.html")
+      } 
+      else {
+        alert("Invalid username or password!");
+      }
+    
+}
+    
+    </script>
+
+</body>
+</html>

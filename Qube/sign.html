@@ -1,0 +1,197 @@
+<html>
+  <!-- <link href="Home Page.css" rel='stylesheet'> -->
+  <style>body {
+    margin-top: 80px;
+   text-align:center;
+ }
+ 
+ body::before {
+   content: '';
+   position: fixed;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+   background: var(--color-darkblue);
+   background-image: url("bg1.jpeg"); 
+   background-size: cover;
+     /* filter: blur(8px);
+  -webkit-filter: blur(10px); */
+   background-repeat: no-repeat;
+   background-position: center;
+ }
+ #title {
+   font-size:88px;
+  font-family: Tahoma, Verdana, sans-serif;
+ }
+ 
+ #fire { width:20%;
+ }
+ 
+ #dropdown {
+   width:20%;
+ }
+ 
+ 
+ 
+ .input-textarea {
+   min-height: 280px;
+   width: 100%;
+   padding: 0.625rem;
+   resize: vertical;
+ }
+ 
+ .submit-button {
+   display: block;
+   width: 100%;
+   padding: 0.75rem;
+   background: green;
+   color: inherit;
+   border-radius: 5px;
+   cursor: pointer;
+ }
+ 
+ .Inname {
+  font-weight: bold;
+  color: rgb(51, 50, 50);
+  text-shadow: 2px;
+  
+ }
+ 
+ .c1{
+  color: rgb(88, 86, 86);
+ }
+
+ .c2{
+  vertical-align: middle;
+  text-align: center;
+ }
+ 
+ .st1{
+  background-color: rgb(22, 151, 50);
+  font-weight: bolder;
+ }</style>
+<div class="main">
+  <header class="header">
+    
+  <h5 id="title" class="text-center" style="color: rgb(229, 228, 245);">Content Creator Sign Up<h5> </header>
+   <body>
+   <center>
+    <!-- <fieldset class="field"> -->
+      <div class="c2">
+      <br><br><br>
+     <form id="survey-form">
+    <div class="form-group">
+      <label class="Inname" id="name-label" for="name" >   Name  </label>
+      <input
+        type="text"
+        name="name"
+        id="fire"
+        class="form-control"
+        placeholder="Enter your name",
+        required
+      />
+    </div>
+    <br>
+    <div class="form-group">
+      <label class="Inname" id="email-label" for="Class">Education</label>
+      <input
+        type="Education"
+        name="Education"
+        id="fire"
+        class="form-control"
+        placeholder="Education"
+        required
+      />
+    </div>
+    <br>
+    <div class="form-group">
+      <label class="Inname" id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="fire"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <br>
+    <div class="form-group">
+      <label class="Inname" id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="fire"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+     <br>
+    <div class="form-group">
+      <label class="Inname" id="name-label" for="name" >Password  </label>
+      <input
+        type="text"
+        name="Password"
+        id="fire"
+        class="form-control"
+        placeholder="Enter your Password",
+        required
+      />
+    </div>
+    <br>
+    <div class="form-group">
+      <label class="Inname" id="name-label" for="name" >Renter Password  </label>
+      <input
+        type="text"
+        name="Password"
+        id="fire"
+        class="form-control"
+        placeholder="Enter your Password",
+        required
+      />
+    </div>
+     <div class="form-group">
+      <div class="Inname">
+      <p>What type of user you are ?</p>
+      </div>
+      
+      <select id="dropdown" name="role" class="form-control" required >
+        <option disabled selected value>User type</option>
+        <option value="student">Student</option>
+        <option value="job">teacher</option>
+        <option value="other">Other</option>
+      </select>
+      
+    </div>
+    <br>
+      
+  </center>
+   
+    <div class="form-group">
+    <label class="c1" id="name-label" for="name">Interseted subjects </label>
+    <input
+           id="fire"
+           type="text"
+           name="name"
+            class="form-control"
+        placeholder="subjects"
+        required
+      />
+       </div>
+      <!-- </fieldset> -->
+      <br>
+      </div>
+    </div>
+    <button class="st1">
+      <a style="color: rgb(12, 12, 14);">submint</a>
+    </button>
+  </form>
+    </body>
+</div>
+</html>

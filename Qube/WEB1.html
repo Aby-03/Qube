@@ -1,0 +1,157 @@
+<html>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.accordion {
+    width: 800px;
+    /* Horizontally and vertically centering the accordion */
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+  
+}
+.bg{
+
+ 
+}
+.accordion__collapsible {
+    border: 2px solid lightgray;
+    border-radius: 3px;
+}
+
+.accordion__collapsible:not(:last-child) {
+    border-bottom: none;
+}
+
+.collapsible__header {
+    background-color: rgb(243, 242, 242);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.collapsible__header::after {
+    content: '+';
+    position: relative;
+    right: 10px;
+}
+
+.collapsible__content {
+    max-height: 10;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 1s, opacity 1s;
+}
+
+.collapsible--open .collapsible__header::after {
+    content: '-';
+}
+
+.collapsible--open .collapsible__content {
+    max-height: 1000px;
+    opacity: 1;
+}
+
+
+
+/* Content styles - To make inner content look better */
+.collapsible__header p {
+    font-size: medium;
+}
+
+.collapsible__content p {
+    font-size: small;
+    margin: 30px;
+
+
+}
+
+.navbar {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 18px;
+}
+    </style>
+   <div class="navbar">
+    <a href="web.html">Home</a>
+    <a href="index.html">Profile</a>
+    <a href="#">Messages</a>
+    <a href="#">Notifications</a>
+    <a href="WEB1.html">question</a>
+    <a href="mhome.html">Log out</a>
+  </div>
+    <div class="bg">
+<div class="accordion">
+    <h1>Popular Questions</h1>
+    <br>
+    <a>categories</a>
+        <div class="accordion__collapsible">
+            <div class="collapsible__header">
+                <p>Maths</p>
+            </div>
+            <div class="collapsible__content">
+                  <p> 1. Differentiation of function f(x,y,z) = Sin(x)Sin(y)Sin(z)-Cos(x) Cos(y) Cos(z) w.r.t ‘y’ is? <div class = "main"> <form> <a> Upload Video </a> <br> <br> <input type = "file" id = "file"> </form> </div> <br><br><br><br> </p>
+                  <p> 2. In euler theorem x ∂z⁄∂x + y ∂z⁄∂y = nz, here ‘n’ indicates? <br><br><br><br> <div class = "main"> <form> <a> Upload Video </a> <br> <br> <input type = "file" id = "file"> </form> </div> </p>
+                  <p> 3. If f(x,y) = x+y⁄y , x ∂z⁄∂x + y ∂z⁄∂y = ? <br><br><br><br> <div class = "main"> <form> <a> Upload Video </a> <br> <br> <input type = "file" id = "file"> </form> </div> </p>
+
+                </p>
+            </div>
+        </div>
+        <div class="accordion__collapsible">
+            <div class="collapsible__header">
+                <p>Physics</p>
+            </div>
+            <div class="collapsible__content">
+                <p> 1. What is the frequency of a photon having energy 2.1 X 10-30 J? <br><br><br><br> <div class = "main"> <form> <a> Upload Video </a> <br> <br> <input type = "file" id = "file"> </form> </div> </p>
+                <p> 2. An electron makes a transition from n = 7 state to n = 3 state in the hydrogen atom. What is the frequency of the emitted photon? <br><br><br><br> <div class = "main"> <form> <a> Upload Video </a> <br> <br> <input type = "file" id = "file"> </form> </div> </p>
+                <p> 3. How is light emitted? <br><br><br><br> <div class = "main"> <form> <a> Upload Video </a> <br> <br> <input type = "file" id = "file"> </form> </div> <div class = "main"> <form> <a> Upload Video </a> <br> <br> <input type = "file" id = "file"> </form> </div> </p>
+            </div>
+        </div>
+        <div class="accordion__collapsible">
+            <div class="collapsible__header">
+                <p>Data Structure</p>
+            </div>
+            <div class="collapsible__content">
+                <p> 1. Explain how array works in C programming? <br><br><br><br> <div class = "main"> <form> <a> Upload Video </a> <br> <br> <input type = "file" id = "file"> </form> </div> </p>
+                <p> 2. How to merge two sorted array? <br><br><br><br> <div class = "main"> <form> <a> Upload Video </a> <br> <br> <input type = "file" id = "file"> </form> </div> </p>
+                <p> 3. Explain linked list with real life examples? <br><br><br><br> <div class = "main"> <form> <a> Upload Video </a> <br> <br> <input type = "file" id = "file"> </form> </div> </p>
+                <p> 4. Can anyone make a detailed video of BFS? <br><br><br><br> <div class = "main"> <form> <a> Upload Video </a> <br> <br> <input type = "file" id = "file"> </form> </div>   </p>
+            </div>
+        </div>
+        <div class="accordion__collapsible">
+            <div class="collapsible__header">
+                <p>Chemistry</p>
+            </div>
+            <div class="collapsible__content">
+                <p> 1. How does water recycling works? <br><br><br><br> <div class = "main"> <form> <a> Upload Video </a> <br> <br> <input type = "file" id = "file"> </form> </div> </p>
+                <p> 2. How can the prevailing rate of species extinction be declined by 30% solely through the protection of biodiversity hotspots? <br><br><br><br> <div class = "main"> <form> <a> Upload Video </a> <br> <br> <input type = "file" id = "file"> </form> </div> </p>
+                <p> 3. What is the significance of genetic variation in the Rauwolfia vomitoria plant? <br><br><br><br> <div class = "main"> <form> <a> Upload Video </a> <br> <br> <input type = "file" id = "file"> </form> </div> </p>
+        </div>
+    </div>
+</div></div>
+
+    <script>
+        let collapsibleHeaders = document.getElementsByClassName('collapsible__header');
+
+Array.from(collapsibleHeaders).forEach(header => {
+    header.addEventListener('click', () => {
+        header.parentElement.classList.toggle('collapsible--open');
+    });
+});
+    </script>
+</html>
